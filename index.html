@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Angel Amores - Ingeniero de Software | Portfolio Innovador</title>
+    <meta name="description" content="Portafolio profesional de Angel Amores, ingeniero de software especializado en backed y fronted. Creando soluciones digitales elegantes y eficientes."> 
+    <meta name="keywords" content="ingeniero de software, desarrollador web, portafolio, PHP, SQL, JAVASCRIPT, HTML, CSS, desarrollo software Ecuador, programación">
+
+    <!-- Favicon (Reemplazar con tu propio favicon) -->
+    <link rel="icon" href="img/logo-angel-amores.png" type="image/png" sizes="16x16">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (para iconos) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css"/>
+
+</head>
+<body>
+
+    <!-- Overlay para menú móvil -->
+    <div class="nav-overlay"></div>
+
+    <!-- Header -->
+    <header class="main-header" id="main-header">
+        <div class="container">
+            <a href="#" class="logo"><p class="fade-on-scroll">Angel<span>Amores</span></p></a> 
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menú Lateral (Único menú funcional) -->
+    <nav class="main-nav-mobile custom-scrollbar" id="main-nav-mobile">
+        <ul>
+            <li><a href="#hero" class="nav-link active">Inicio</a></li>
+            <li><a href="#about" class="nav-link">Acerca de mí</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li><a href="#portfolio" class="nav-link">Portafolio</a></li>
+            <li><a href="#blog" class="nav-link">Blog</a></li>
+            <li><a href="#contact" class="nav-link">Contacto</a></li>
+        </ul>
+        <div class="nav-contact-info">
+            <h4>Contacto Rápido</h4>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:tu.email@example.com">yo@angelamores.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Ambato - Ecuador</p>             
+            <div class="nav-social-links">
+                <a href="https://www.linkedin.com/in/angel-amores-bustos-ec/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a> <!-- CAMBIAR -->
+                <a href="https://github.com/AngelAmoresBustos" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a> <!-- CAMBIAR -->
+                <a href="https://x.com/AngelAmoresEc" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a> <!-- CAMBIAR (Opcional) -->
+            </div>
+            <a href="#contact" class="btn btn-outline-light nav-cta" style="margin-top: 2rem;">Enviar Mensaje</a>
+        </div>
+    </nav>
+
+    <!-- Indicador de Progreso -->
+    <div id="scroll-progress-indicator"></div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" data-label="Inicio">
+            <div class="container">
+                <div class="hero-content hidden">
+                    <h1>Hola, soy Angel Amores</h1> 
+                    <p class="subtitle">Ingeniero de Software apasionado por crear soluciones digitales elegantes y eficientes. Transformo ideas complejas en experiencias de usuario intuitivas y funcionales.</p> <!-- CAMBIAR -->
+                    <div class="hero-cta">
+                        <a href="#portfolio" class="btn btn-primary"><i class="fas fa-pencil"></i> Ver Mi Trabajo</a>
+                        <a href="https://wa.me/593984453540" target="_blank" class="btn btn-secondary"> <i class="fa-brands fa-whatsapp"></i> Contáctame</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Acerca de mí -->
+        <section id="about" data-label="Acerca de mí">
+            <div class="container">
+                <h2 class="hidden">Acerca de mí</h2>
+                <div class="about-content">
+                    <div class="about-text hidden">
+                        <h3>Transformando Código en Valor</h3>
+                        <p>Con 25 años de experiencia en el desarrollo de software, he tenido el privilegio de trabajar en proyectos desafiantes que abarcan desde páginas web hasta automatización de complejos procesos industriales y comerciales. Mi enfoque se centra en escribir código limpio, escalable y mantenible, siempre buscando la mejor solución técnica para cada problema.</p> <!-- CAMBIAR X y tipos de proyecto -->
+                        <p>Soy un firme creyente en el aprendizaje continuo y me mantengo actualizado con las últimas tendencias tecnológicas. Mi objetivo es utilizar mis habilidades para construir productos que no solo funcionen impecablemente, sino que también <span class="highlight">aporten un valor real</span> a los usuarios y a las empresas.</p>
+                        <p>Más allá del código, disfruto de escuchar musica, de leer y caminatas al aire libre, lo que me ayuda a mantener una perspectiva fresca y creativa.</p> <!-- CAMBIAR Hobbies -->
+                        <a href="#contact" class="btn btn-outline">Hablemos</a>
+                    </div>
+                    <div class="about-image hidden">
+                        <img src="img/angelamores.jpg" alt="Foto de Angel Amores"> 
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="skills" data-label="Habilidades" class="bg-light">
+            <div class="container">
+                <h2 class="hidden">Habilidades Técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-item hidden"> <i class="fab fa-php"></i> <h4>PHP</h4> </div>
+                    <div class="skill-item hidden"> <i class="fab fa-js-square"></i> <h4>JavaScript (ES6+)</h4> </div>
+                    <div class="skill-item hidden"> <i class="fab fa-html5"></i> <h4>HTML</h4> </div>
+                    <div class="skill-item hidden"> <i class="fab fa-node-js"></i> <h4>Node.js</h4> </div>
+                    <div class="skill-item hidden"> <i class="fas fa-database"></i> <h4>SQL & NoSQL</h4> </div>
+                    <div class="skill-item hidden"> <i class="fab fa-css3"></i> <h4>CSS</h4> </div>
+                    <div class="skill-item hidden"> <i class="fa-brands fa-wordpress-simple"></i> <h4>WordPress</h4> </div>
+                    <div class="skill-item hidden"> <i class="fas fa-server"></i> <h4>APIs RESTful</h4> </div>
+                    <div class="skill-item hidden"> <i class="fab fa-git-alt"></i> <h4>Git & GitHub</h4> </div>
+                    <div class="skill-item hidden"> <i class="fas fa-terminal"></i> <h4>Windows</h4> </div>
+                    <div class="skill-item hidden"> <i class="fas fa-project-diagram"></i> <h4>Arquitectura</h4> </div>
+                    <div class="skill-item hidden"> <i class="fas fa-vial"></i> <h4>Testing (Unit/Int)</h4> </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portafolio -->
+        <section id="portfolio" data-label="Portafolio">
+            <div class="container">
+                <h2 class="hidden">Proyectos Destacados</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item hidden">
+                        <div class="portfolio-image"> <img src="img/lg.png" alt="Proyecto Laboratorio Genesis"> </div>
+                        <div class="portfolio-content">
+                            <h4>Laboratorio Genesis - Fuerza de Ventas</h4>
+                            <p class="tech-stack"><i class="fas fa-code"></i> Bootstrap, Google Maps, PHP, SQL</p>
+                            <p class="description">Gestión integral de equipos comerciales en campo: optimización de rutas, supervisión de ventas y administración de cobranza móvil.</p>
+                            <div class="portfolio-links"> <a href="labogenesis.net" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a> <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a> </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden">
+                        <div class="portfolio-image"> <img src="img/hallin.png" alt="Proyecto Dos"> </div>
+                        <div class="portfolio-content">
+                            <h4>Estudios Hallin: Plataforma de Educación</h4>
+                            <p class="tech-stack"><i class="fas fa-code"></i> HTLM, CSS, JAVASCRIPT, PHP, SQL</p>
+                            <p class="description">Desarrollo integral de una plataforma de e-learning: Desde el análisis y diseño hasta el desarrollo e implementación, creamos soluciones educativas en línea diseñadas para ser flexibles y versátiles, con el objetivo de potenciar significativamente la experiencia de aprendizaje.</p>
+                            <div class="portfolio-links"> <a href="#" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a> <a href="#" target="_blank"><i class="fab fa-github"></i> Código</a> </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item hidden">
+                        <div class="portfolio-image"> <img src="img/nexusseguros.jpeg" alt="Proyecto Tres"> </div>
+                        <div class="portfolio-content">
+                            <h4>Nexus Seguros: Página Web</h4>
+                            <p class="tech-stack"><i class="fas fa-code"></i> HTML, CSS, WORDPRESS, ELEMENTOR</p>
+                            <p class="description">El desarrollo del sitio web de Nexus Seguros se abordó estratégicamente. Inicialmente, se realizó un análisis del propósito y la identidad de la empresa para definir un concepto central. Posteriormente, se implementó un diseño limpio y minimalista, priorizando el orden, la estética y una arquitectura de la información intuitiva.</p>
+                            <div class="portfolio-links"> <a href="nexussegeuros.ec" target="_blank"><i class="fas fa-external-link-alt"></i> Demo</a> <a href="https://github.com/AngelAmoresBustos/NexusSeguros" target="_blank"><i class="fab fa-github"></i> Código</a> </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 3.5rem;">
+                    <a href="https://github.com/AngelAmoresBustos" target="_blank" class="btn btn-outline">Ver más en GitHub <i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonials" data-label="Testimonios" class="bg-light">
+            <div class="container">
+                <h2 class="hidden">Lo que dicen de mi trabajo</h2>
+                <div class="testimonial-slider hidden">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Angel es un ingeniero excepcional. Su capacidad para resolver problemas complejos y su atención al detalle fueron cruciales para el éxito de nuestro proyecto. ¡Altamente recomendado!"</p>
+                        <p class="testimonial-author">Octavio Castro<span> Presidente JAAPLACON</span></p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Ángel demostró ser un profesionalismo sin igual durante nuestra colaboración. Su enfoque y serenidad es increible sobre todo en los momentos mas dificiles, su experiencia fue un factor determinante. Lo recomendamos sin reservas."</p>
+                        <p class="testimonial-author">Oscar Belesaca<span> Gerente de HALLIN</span></p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"La contribución de Ángel como ingeniero fue sobresaliente. Su habilidad para abordar y solucionar desafíos técnicos, resultaron fundamentales para alcanzar los objetivos de nuestro proyecto. Es un profesional muy recomendable."</p>
+                        <p class="testimonial-author">Italo Bustos<span> Gerente de CALZADO TTALOS</span></p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">"Ángel es una persona de gran talento. Su aguda capacidad para resolver problemas y su excepcional agilidad para diseñar soluciones fueron la clave para terminar el proyecto a tiempo. Lo recomendamos"</p>
+                        <p class="testimonial-author">Ana Cristina Sánchez<span> Gerente de AUTORESPUESTOS SÁNCHEZ</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog (Muestra) -->
+        <section id="blog" data-label="Blog">
+            <div class="container">
+                <h2 class="hidden">Desde Mi Teclado</h2>
+                <p class="text-center hidden" style="margin-top: -2rem; margin-bottom: 3.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">Compartiendo conocimientos, ideas y reflexiones sobre tecnología, desarrollo de software y las últimas tendencias del sector.</p>
+                <div class="blog-grid">
+                    <div class="blog-post-preview hidden">
+                        <div class="blog-post-content">
+                            <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> 15 Febrero, 2024</p>
+                            <h4><a href="javascript:void(0);" onClick="showBlog(1);">Desarrollo de Software Personalizado en América Latina</a></h4>
+                            <p class="blog-post-excerpt">El desarrollo de software personalizado permite a las PYMES contar con soluciones específicas que responden directamente a sus necesidades operativas y estratégicas. A diferencia de las soluciones estándar, que no se ajustan completamente a los procesos únicos de una empresa ...</p>
+                            <a href="javascript:void(0);" onClick="showBlog(1);" class="read-more-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-post-preview hidden">
+                        <div class="blog-post-content">
+                            <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> 02 Abril, 2024</p>
+                            <h4><a href="javascript:void(0);" onClick="showBlog(2);">Desarrollo de Software Personalizado en América Latina II</a></h4>
+                            <p class="blog-post-excerpt">Hace algunos años, un amigo estaba planeando su boda. Este hombre, con una buena situación económica, no dejaba nada al azar. Junto con su futura esposa, cuidaron cada detalle. Una de sus principales preocupaciones fue su traje. Decidió encargar uno de Estados Unidos, con un costo considerable ...</p>
+                            <a href="javascript:void(0);" onClick="showBlog(2);" class="read-more-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="blog-post-preview hidden">
+                        <div class="blog-post-content">
+                            <p class="blog-post-meta"><i class="far fa-calendar-alt"></i> 10 Enero, 2025</p>
+                            <h4><a href="javascript:void(0);" onClick="showBlog(3);">Desarrollo de Software Personalizado en América Latina III con IA</a></h4>
+                            <p class="blog-post-excerpt">La IA ha cambiado el mundo, todo sera un antes y un despues de las IAs, y mas en el desarrollo de software personalizado...</p>
+                            <a href="javascript:void(0);" onClick="showBlog(3);" class="read-more-link">Leer Más <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center" style="margin-top: 3.5rem;display:none;">
+                    <a href="#" class="btn btn-outline">Visitar Blog Completo</a>
+                </div>
+            </div>
+
+            <div class="container" id="blog-post-1" style="display:none;margin-top:100px;">
+                <div class="about-content">
+                    <div class="about-text hidden">
+                        <h3>Desarrollo de Software Personalizado en América Latina</h3>
+                        <p>
+                            En el maravilloso mundo de la tecnología actual, la capacidad de adaptarse y evolucionar es importante para la supervivencia y el crecimiento de cualquier empresa. Las pequeñas y medianas empresas (PYMES) han comenzando a reconocer el poder transformador del desarrollo de software personalizado. Sin embargo, se enfrentan a retos importantes, especialmente el miedo al cambio y la preocupación por la seguridad de su información sensible. Hoy vamos a ver cómo superar estas barreras para una adopción exitosa.
+                        </p>
+                        <p>
+                            En América Latina, el desarrollo de software personalizado ha cobrado impulso en los últimos años. Las empresas están buscando soluciones que se adapten a sus necesidades específicas y que les permitan optimizar sus procesos. Sin embargo, muchas PYMES aún son reacias a dar el salto hacia la digitalización, temiendo que el cambio pueda interrumpir sus operaciones o resultar en una inversión no rentable.
+                        El desarrollo de software personalizado permite a las PYMES contar con soluciones específicas que responden directamente a sus necesidades operativas y estratégicas. A diferencia de las soluciones estándar, que no se ajustan completamente a los procesos únicos de una empresa.
+                        </p>
+                        <p>
+                        Uno de los mayores desafíos que enfrentan las PYMES es el miedo al cambio. Temen que la implementación de nuevas tecnologías pueda interrumpir sus operaciones o resultar en una inversión no rentable. Para enfrentar este temor, es fundamental trabajar en los siguientes temas:
+                        </p>
+                        <p>
+                        -Educar sobre los beneficios. Presentar casos de éxito y estudios de mercado que demuestren el impacto positivo del software personalizado.
+                        </p>
+                        <p>
+                        -Involucrar al personal clave. Facilitar la transición mediante la participación de los empleados en el proceso de desarrollo, asegurando que el nuevo sistema sea amigable y beneficioso.
+                        </p>
+                        <p>
+                        -Implementar de forma gradual. - Empezar con un módulo específico para ir evaluando y ajustando el software según las necesidades antes de una implementación total.
+                        </p>
+                        <p>
+                        Otro problema es la preocupación por la seguridad de la información. Las PYMES manejan datos sensibles que, si se comprometen, podrían causar daños irreparables a la reputación y operación de la empresa. Para superar estos miedos:
+                        </p>
+                        <p>
+                        -Seleccionar un proveedor confiable. Elegir empresas de desarrollo de software con una sólida reputación y experiencia en el manejo de información sensible.
+                        </p>
+                        <p>
+                        -Implementar fuertes medidas de seguridad. Utilizar tecnologías de encriptación, autenticación de múltiples factores y auditorías de seguridad periódicas.
+                        </p>
+                        <p>
+                        -Fomentar la transparencia. Asegurar que el equipo de desarrollo mantenga una comunicación clara y abierta sobre las prácticas de seguridad y la gestión de datos.
+                        </p>
+                        <p>
+                        Numerosas PYMES en América Latina han dado el salto hacia la digitalización mediante el desarrollo de software personalizado. Un ejemplo es Cooperativa de Transporte Pesado Los Andes, una pequeña empresa en Ecuador que, al adoptar un sistema de gestión hecho a medida, logró aumentar su eficiencia operativa en un 25% y expandir su mercado.
+                        </p>
+                        <p>
+                        El software personalizado ofrece a las PYMES una oportunidad increíble para mejorar su competitividad y adaptarse a un mundo en constante cambio. Aunque puede existir miedo al cambio y preocupaciones por la seguridad estos obstáculos se pueden superar fácilmente con la estrategia adecuada y el socio tecnológico correcto.
+                        </p>
+                        <a href="javascript:void(0);" onClick="hideBlog(1);" class="read-less-link">Regresar <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="blog-post-2" style="display:none;margin-top:100px;">
+                <div class="about-content">
+                    <div class="about-text hidden">
+                        <h3>Desarrollo de Software Personalizado en América Latina II</h3>
+                        <p>
+                            Hace algunos años, un amigo estaba planeando su boda. Este hombre, con una buena situación económica, no dejaba nada al azar. Junto con su futura esposa, cuidaron cada detalle. Una de sus principales preocupaciones fue su traje. Decidió encargar uno de Estados Unidos, con un costo considerable. Sin embargo, cuando llegó el traje y se probó, le quedó grande. Llevó el traje a un sastre para hacer los ajustes necesarios, pero el resultado no fue satisfactorio. No quería arriesgarse a pedir otro traje y volver a tener el mismo problema.
+                        </p>
+                        <p>
+                            Viendo su dilema, como buen amigo, le sugerí que se hiciera un traje a medida con un sastre de confianza. Después de mucho debatir sobre si comprar otro traje o hacerlo a medida, logré convencerlo de que un traje hecho a medida sería la mejor opción para que luciera espectacular en su gran día.
+                        </p>
+                        <p>
+                            Esto me recuerda mucho al software personalizado. Al igual que el traje de mi amigo, muchas soluciones de software estándar no se ajustan perfectamente a las necesidades de una empresa. Frecuentemente, se necesita de otras herramientas adicionales y más esfuerzo para resolver los mismos problemas.
+                        </p>
+                        <p>
+                            Desarrollar un buen software desde cero no es tarea fácil. No se trata solo de código y metodologías; lo más importante, según mi experiencia, es saber escuchar, entender al cliente y sumergirse en su negocio. Con un software hecho a medida, cada funcionalidad se diseña pensando en el cliente, asegurando una perfecta alineación con sus objetivos empresariales.
+                        </p>
+                        <p>
+                            A medida que el negocio crece, el software personalizado puede evolucionar junto a él. La empresa no quedará atrapada en un software rígido; en su lugar, tendrá una solución que crece y se adapta constantemente.
+                        </p>
+                        <p>
+                            El software personalizado se puede diseñar para integrarse perfectamente con los sistemas y herramientas actuales de la empresa. Olvídate de las complicaciones, con software personalizado, la integración es tan precisa como un reloj suizo.
+                        </p>
+                        <p>
+                            Un software único y adaptado a las necesidades de la empresa ofrece una ventaja competitiva significativa frente a quienes utilizan soluciones genéricas. Marca la diferencia con herramientas que nadie más tiene, diseñadas para potenciar tu éxito.
+                        </p>
+                        <p> 
+                            El software personalizado optimiza los procesos específicos de la empresa, eliminando tareas redundantes, mejorando la eficiencia y maximizando la productividad. Con un software que hace exactamente lo que necesitas, sin funciones innecesarias que entorpezcan el trabajo, todo es más sencillo.
+                        <p>
+                        </p>   
+                            Además, tener un software personalizado brinda un control total sobre sus funcionalidades y su evolución. Tú decides cómo debe funcionar y evolucionar, asegurando que siempre esté alineado con tus objetivos.
+                            El software personalizado puede diseñarse con medidas de seguridad específicas para proteger la información crítica y respondiendo a tus necesidades particulares.
+                        </p>
+                        <p>
+                            En un mundo de infinitas posibilidades, el software personalizado es la herramienta que permite alcanzar las metas más ambiciosas.
+                        </p>
+                        <p>
+                        </p>
+                        <a href="javascript:void(0);" onClick="hideBlog(2);" class="read-more-link">Regresar <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container" id="blog-post-3" style="display:none;margin-top:100px;">
+                <div class="about-content">
+                    <div class="about-text hidden">
+                        <h3>Desarrollo de Software Personalizado en América Latina III con IA</h3>
+                        <p>
+                            En el maravilloso y loco mundo tecnológico actual, la capacidad de una empresa para adaptarse y evolucionar no es solo una ventaja, sino una necesidad para la supervivencia y el crecimiento. Particularmente para las pequeñas y medianas empresas (PYMES) en América Latina, el desarrollo de software personalizado emerge como una herramienta transformadora, permitiéndoles operar con una eficiencia y precisión que las soluciones estándar difícilmente pueden ofrecer.
+                        </p>
+                        <p>
+                            Pensemos en ello como la diferencia entre un traje comprado en una tienda y uno hecho a medida por un sastre experto. El traje estándar puede funcionar, pero rara vez ajusta perfectamente; siempre requerirá quizás un arreglo aquí, un complemento allá. De manera similar, el software genérico a menudo obliga a las empresas a adaptar sus procesos a la herramienta, en lugar de tener una herramienta que se adapte perfectamente a sus flujos de trabajo únicos. El software personalizado, en cambio, se diseña escuchando atentamente, entendiendo a profundidad el negocio del cliente y construyendo cada funcionalidad pensando en sus objetivos específicos, asegurando una integración tan precisa como un reloj suizo y optimizando procesos al eliminar redundancias.
+                        </p>
+                        <p
+                            Sin embargo, adoptar soluciones personalizadas no está exento de desafíos para las PYMES latinoamericanas. Persiste un miedo natural al cambio, la preocupación por interrumpir operaciones o realizar inversiones no rentables y el temor por la seguridad de la información sensible. Superar estas barreras es de suma importancia. Requiere educar sobre los beneficios tangibles, involucrar al personal clave en el proceso para asegurar la adopción, implementar de forma gradual y, principalmente, seleccionar un socio tecnológico confiable que garantice robustas medidas de seguridad y transparencia.
+                        </p>
+                        <p>
+                            Ahora, tenemos un nuevo y poderoso jugador en cancha: la Inteligencia Artificial (IA). La IA está transformando no solo el software en general, sino también el propio proceso de desarrollo de soluciones a medida. Sus beneficios son increibles:
+                        </p>
+                        <div class="container2">   
+                            <p>
+                                •	Automatización y Eficiencia: La IA agiliza tareas como la generación de código y las pruebas, reduciendo potencialmente tiempos y costos de desarrollo. Herramientas como asistentes de código basados en IA son cada vez más comunes.
+                            </p>
+                            <p>
+                                •	Personalización Mejorada: Permite crear experiencias aún más adaptativas y únicas para los usuarios finales.
+                            </p>
+                            <p>
+                                •	Análisis Avanzado: Facilita el procesamiento de grandes volúmenes de datos para tomar decisiones más informadas.
+                            </p>
+                        </div>
+                        <p>
+                            Sin embargó, la integración de la IA en el desarrollo de software personalizado introduce nuevas y críticos condiciones:
+                        </p>
+                        <div  class="container2">
+                            <p>
+                                •	Ética y Sesgos: Es vital asegurar que los algoritmos no generen discriminaciones y que su funcionamiento sea transparente y justo.
+                            </p>
+                            <p>
+                                •	Privacidad y Seguridad Amplificadas: El manejo de datos para entrenar o usar IA exige medidas de seguridad aún más estrictas.
+                            </p>
+                            <p>
+                                •	Necesidad de Criterio Humano: La IA es una herramienta, no un reemplazo del juicio profesional. No comprende el contexto empresarial, las regulaciones específicas o las necesidades matizadas de las partes interesadas como lo hace un desarrollador humano. La decisión final y la supervisión siguen siendo cruciales y deben hacer los profesionales humanos de amplia experiencia.
+                            </p>
+                            <p>
+                                •	Calidad y Mantenimiento: El código generado por IA necesita revisión humana intensiva para garantizar su fiabilidad, seguridad y mantenibilidad, especialmente en sistemas complejos.
+                            </p>
+                        </div>
+                        <p>
+                            El desarrollo de software personalizado sigue siendo una ventaja competitiva fundamental para las PYMES en América Latina, ofreciendo adaptabilidad, eficiencia y control inigualables. La IA emerge como una herramienta potente para mejorar el proceso de creación de este software, pero su adopción debe ser cuidadosa y crítica. Es esencial abordar los desafíos éticos y de seguridad, y nunca perder de vista que la IA potencia, pero no reemplaza, la comprensión profunda del negocio y el criterio experto humano necesarios para construir soluciones verdaderamente efectivas y a medida. El éxito radica en encontrar el equilibrio adecuado que entienda ambas dimensiones.
+                            
+                        </p>
+                        <a href="javascript:void(0);" onClick="hideBlog(3);" class="read-more-link">Regresar <i class="fas fa-arrow-left"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Contacto -->
+        <section id="contact" data-label="Contacto" class="bg-light">
+            <div class="container">
+                <h2 class="hidden">Hablemos</h2>
+                 <p class="text-center hidden" style="margin-top: -2rem; margin-bottom: 3.5rem; max-width: 700px; margin-left: auto; margin-right: auto;">¿Tienes un proyecto en mente, una oportunidad interesante, estoy abierto a nuevas oportunidades, colaboraciones o simplemente a charlar sobre tecnología.?</p>
+                <div class="contact-wrapper">
+                    <div class="contact-form-container hidden">
+                        <form action="controller/send-email.php" method="POST" class="contact-form">
+                            <input type="hidden" name="_subject" value="Nuevo Mensaje desde Portafolio de [Tu Nombre]">
+                            <div> <label for="name">Nombre:</label> <input type="text" id="name" name="name" required> </div>
+                            <div> <label for="email">Correo Electrónico:</label> <input type="email" id="email" name="email" required> </div>
+                            <div> <label for="message">Mensaje:</label> <textarea id="message" name="message" required></textarea> </div>
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje <i class="fas fa-paper-plane" style="margin-left: 8px;"></i></button>
+                        </form>
+                    </div>
+                    <div class="contact-info hidden">
+                        <h3>Información de Contacto</h3>
+                        <p><i class="fas fa-envelope"></i> <a href="mailto:tu.email@example.com">yo@angelamores.com</a></p>
+                        <p><i class="fas fa-map-marker-alt"></i> Ambato, Ecuador</p>
+                        <p><i class="fas fa-link"></i> <a href="https://www.tu-sitio-web.com" target="_blank">www.angelamores.com</a></p>
+                        <div class="social-links-contact">
+                            <h4>Encuéntrame en línea:</h4>
+                             <div class="links">
+                                 <a href="https://www.linkedin.com/in/angel-amores-bustos-ec/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                 <a href="https://github.com/AngelAmoresBustos" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                                 <a href="https://x.com/AngelAmoresEc" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <br>
+            <div class="footer-social-links">
+                <a href="https://www.linkedin.com/in/angel-amores-bustos-ec/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/AngelAmoresBustos" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://x.com/AngelAmoresEc" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+            <br>
+            <p class="footer-copyright">
+                © <span id="current-year"></span> Angel Amores. Todos los derechos reservados. | Diseñado con <i class="fas fa-heart"></i> y puro código
+            </p>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
